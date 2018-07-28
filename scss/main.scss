@@ -27,7 +27,7 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 3), 0.5);
+    background: rgba(lighten($secondary-color, 0.1), 0.1);
   }
 }
 
@@ -65,4 +65,9 @@ main {
       margin-top: 20vh;
     }
   }
+}
+
+.lg-heading:hover {
+  color: $secondary-color;
+  transition: color 2s;
 }
