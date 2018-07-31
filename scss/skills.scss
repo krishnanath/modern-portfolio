@@ -14,6 +14,8 @@ $blue: #1199ff;
 $purple: #9b59b6;
 $orange: #ffa500;
 $green: #27ae60;
+$cyan: #00ffff;
+$magenta: #f08080;
 
 $animation-delay: 0.7s;
 
@@ -137,6 +139,18 @@ h1 {
         -webkit-animation-delay: $animation-delay * 5;
         animation-delay: $animation-delay * 5;
       }
+      #progress-sql {
+        -webkit-animation-name: progress-sql;
+        animation-name: progress-sql;
+        -webkit-animation-delay: $animation-delay * 6;
+        animation-delay: $animation-delay * 6;
+      }
+      #progress-python {
+        -webkit-animation-name: progress-python;
+        animation-name: progress-python;
+        -webkit-animation-delay: $animation-delay * 7;
+        animation-delay: $animation-delay * 7;
+      }
     } // end bar-container
   }
 }
@@ -156,13 +170,19 @@ h1 {
 .progressgreen {
   background-color: $green;
 }
+.progresscyan {
+  background-color: $cyan;
+}
+.progressmagenta {
+  background-color: $magenta;
+}
 
 @-webkit-keyframes progress-html {
   0% {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 75%;
   }
 }
 @-webkit-keyframes progress-css {
@@ -170,7 +190,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 67%;
   }
 }
 @-webkit-keyframes progress-javascript {
@@ -178,7 +198,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 60%;
   }
 }
 @-webkit-keyframes progress-php {
@@ -194,7 +214,25 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 52%;
+  }
+}
+
+@-webkit-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 44%;
+  }
+}
+
+@-webkit-keyframes progress-python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 11%;
   }
 }
 
@@ -203,7 +241,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 75%;
   }
 }
 @-moz-keyframes progress-css {
@@ -211,7 +249,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 67%;
   }
 }
 @-moz-keyframes progress-javascript {
@@ -219,7 +257,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 60%;
   }
 }
 @-moz-keyframes progress-php {
@@ -235,7 +273,23 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 52%;
+  }
+}
+@-moz-keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 44%;
+  }
+}
+@-moz-keyframes progress-python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 11%;
   }
 }
 
@@ -244,7 +298,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 75%;
   }
 }
 @keyframes progress-css {
@@ -252,7 +306,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 90%;
+    width: 67%;
   }
 }
 @keyframes progress-javascript {
@@ -260,7 +314,7 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 70%;
+    width: 60%;
   }
 }
 @keyframes progress-php {
@@ -276,6 +330,22 @@ h1 {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 52%;
+  }
+}
+@keyframes progress-sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 44%;
+  }
+}
+@keyframes progress-python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 11%;
   }
 }

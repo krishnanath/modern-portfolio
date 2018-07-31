@@ -127,7 +127,7 @@ body {
   color: #fff;
   background: #444; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/backgroundanj.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -139,6 +139,9 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
+    @media screen and (max-width: 500px) {
+      body#bg-img {
+        background: url(../img/mobile.jpg); } }
 
 .container {
   margin-top: 50px;
@@ -195,7 +198,7 @@ body {
           .container .container-inner .main-content .main-headings .heading #heading1 {
             margin-left: 10px; }
           .container .container-inner .main-content .main-headings .heading #heading2 {
-            margin-left: 60px; }
+            margin-left: 10px; }
           .container .container-inner .main-content .main-headings .heading #heading3 {
             margin-top: -52px;
             font-size: 1100%;
@@ -415,7 +418,7 @@ body {
   font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/background.jpg);
+    background: url(../img/backgroundanj.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -427,6 +430,9 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
+    @media screen and (max-width: 500px) {
+      body#bg-img {
+        background: url(../img/mobile.jpg); } }
 
 h1,
 h2,
