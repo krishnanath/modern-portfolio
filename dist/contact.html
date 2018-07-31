@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+
     <link rel="shortcut icon" href="https://image.ibb.co/koE6Uy/logo.png" />
 
-    <title>About Me</title>
+    <title>Contact Me</title>
 </head>
 
 <body id="bg-img">
@@ -31,7 +33,7 @@
                     <a href="/dist/" class="nav-link">
                         HOME</a>
                 </li>
-                <li class="nav-item current">
+                <li class="nav-item ">
                     <a href="about.html" class="nav-link">
                         ABOUT</a>
                 </li>
@@ -44,7 +46,7 @@
                         PROJECTS
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="contact.html" class="nav-link">
                         CONTACT
                     </a>
@@ -53,42 +55,17 @@
         </nav>
     </header>
     <!-- Reposnive Layout -->
-    <div class="container">
-        <div class="container-inner">
-            <div class="main-content">
-                <div class="main-headings" id="main-headings-js">
-
-                    <div class="heading">
-                        <h3 id="heading1">Passionate In </h3>
-                        <h3 id="heading2">Programming.</h3>
-                        <h1 id="heading3">KRISHNA</h1>
-                        <br>
-                    </div>
-
-                    <div class="short-bio">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat, quod sed optio nesciunt
-                            aspernatur inventore ab, nostrum accusantium harum dolor voluptate nulla!</p>
-
-                    </div>
-
-                    <a href="#" class="link" onclick="readMore()">Read More</a>
-                </div>
-
-                <div class="more-info " id="more-info-js">
-
-                    <h4>Lorem ipsum dolor sit.</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse expedita impedit iste, quibusdam debitis
-                        fugit repudiandae voluptatum vero quod nulla!</p>
-
-                </div>
-
+    <div id="container">
+        <h1 class="logo">Contact me</h1>
+        <div id="form-box">
+            <i id="prev-btn" class="fas fa-arrow-left"></i>
+            <i id="next-btn" class="fas fa-arrow-right"></i>
+            <div id="input-group">
+                <input id="input-field" required>
+                <label id="input-label"></label>
+                <div id="input-progress"></div>
             </div>
-
-            <div class="image-wrapper">
-                <div class="image-container">
-                    <img class="image" src="https://image.ibb.co/nNN2F7/10563168_502646859838377_1014207361810163604_n.jpg" alt="image of a young woman.">
-                </div>
-            </div>
+            <div id="progress-bar"></div>
         </div>
     </div>
 
@@ -102,7 +79,7 @@
 
     </main>
     <script src="js/main.js"></script>
-    <script src="js/about.js"></script>
+    <script src="js/contact.js"></script>
 
 
 
