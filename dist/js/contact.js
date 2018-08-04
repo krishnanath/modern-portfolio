@@ -145,4 +145,7 @@ const questions = [
       formBox.parentElement.appendChild(h1);
       setTimeout(() => (h1.style.opacity = 1), 50);
     }, 1000);
+    
   }
+
+ 

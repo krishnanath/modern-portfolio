@@ -15,7 +15,7 @@
     <title>Contact Me</title>
 </head>
 
-<body id="bg-img">
+<body>
 
 
     <header>
@@ -56,7 +56,7 @@
     </header>
     <!-- Reposnive Layout -->
     <div id="container">
-        <h1 class="logo">Contact me</h1>
+        <h1 class="logo">Contact Me</h1>
         <div id="form-box">
             <i id="prev-btn" class="fas fa-arrow-left"></i>
             <i id="next-btn" class="fas fa-arrow-right"></i>
@@ -67,24 +67,42 @@
             </div>
             <div id="progress-bar"></div>
         </div>
+
     </div>
 
 
 
+    <div id="map"></div>
+
+
+
+
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 10,
+                center: { lat: 10.1955, lng: 76.4968 }
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLqL3gEP1laK4EiD_8j6mj_c5DfzIJHE8&callback=initMap"
+        type="text/javascript"></script>
     <!-- END -->
-    <footer id="main-footer">
-
-    </footer>
 
 
-    </main>
+
     <script src="js/main.js"></script>
     <script src="js/contact.js"></script>
 
 
+    <footer id="main-footer">
 
-
-
+    </footer>
 </body>
 
 </html>

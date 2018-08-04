@@ -15,7 +15,7 @@ body {
 h1.logo {
   color: #08fdd8;
   font-family: "Arial", cursive;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h1.end {
@@ -159,14 +159,20 @@ h1.end {
   margin: 0;
   font-size: 20px;
 }
-#map {
-  height: 500px;
 
-  width: 100%;
+#map {
+  height: 400px;
+  width: 80%;
 }
 
 @media (max-width: 600px) {
   #form-box {
     width: 80%;
+  }
+}
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    height: 100px;
+    width: 50%;
   }
 }
