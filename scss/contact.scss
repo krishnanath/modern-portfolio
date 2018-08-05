@@ -26,10 +26,18 @@ h1.end {
 }
 
 #container {
-  height: 100vh;
+  height: 30vh;
+
   display: flex;
   flex-direction: column;
   justify-content: top;
+  align-items: center;
+}
+#map {
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -160,11 +168,6 @@ h1.end {
   font-size: 20px;
 }
 
-#map {
-  height: 400px;
-  width: 80%;
-}
-
 @media (max-width: 600px) {
   #form-box {
     width: 80%;
@@ -172,7 +175,9 @@ h1.end {
 }
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
-    height: 100px;
-    width: 50%;
+    #map {
+      height: 100px;
+      width: 100%;
+    }
   }
 }
