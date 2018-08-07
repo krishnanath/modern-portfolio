@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <link rel="shortcut icon" href="https://image.ibb.co/koE6Uy/logo.png" />
+
+    <title>Contact Me</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav ">
+                <li class="nav-item">
+                    <a href="/dist/" class="nav-link">
+                        HOME</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="about.html" class="nav-link">
+                        ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="skills.html" class="nav-link">
+                        SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        PROJECTS
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="contact.html" class="nav-link">
+                        CONTACT
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Reposnive Layout -->
+
+    <div id="container">
+
+        <h1 class="logo">Contact Me</h1>
+        <div id="form-box">
+            <i id="prev-btn" class="fas fa-arrow-left"></i>
+            <i id="next-btn" class="fas fa-arrow-right"></i>
+            <div id="input-group">
+                <input id="input-field" required>
+                <label id="input-label"></label>
+                <div id="input-progress"></div>
+
+
+            </div>
+
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+    <div id="map"></div>
+
+
+    <script>
+        function initMap() {
+            var options = {
+                zoom: 13,
+                center: { lat: 10.1955, lng: 76.4968 }
+            }
+            var map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLqL3gEP1laK4EiD_8j6mj_c5DfzIJHE8&callback=initMap"
+        type="text/javascript"></script>
+
+
+
+    <!-- END -->
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+
+
+    <footer id="main-footer">
+
+    </footer>
+</body>
+
+</html>
